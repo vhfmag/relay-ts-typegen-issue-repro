@@ -1,6 +1,6 @@
 import { graphql } from "relay-runtime";
 
-// export gql nodes isn't idiomatic but we're doing this just to appease the unused variables lint rule
+// exporting gql nodes isn't idiomatic but we're doing this just to appease the unused variables lint rule
 export const query = graphql`
     query AppQuery($showEmail: Boolean!) @raw_response_type {
         ...AppFragment
