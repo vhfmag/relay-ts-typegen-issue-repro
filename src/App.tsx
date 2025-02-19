@@ -1,4 +1,5 @@
 import { graphql } from "relay-runtime";
+import { AppQuery } from "./__generated__/AppQuery.graphql";
 
 // exporting gql nodes isn't idiomatic but we're doing this just to appease the unused variables lint rule
 export const query = graphql`
@@ -23,3 +24,6 @@ export const conditionalFragment = graphql`
         }
     }
 `;
+
+const data = null as any as AppQuery["rawResponse"];
+const email = data?.account?.email;
