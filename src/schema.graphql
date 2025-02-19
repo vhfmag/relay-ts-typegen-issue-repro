@@ -1,0 +1,9 @@
+type Query {
+  account: Account
+}
+
+type Account {
+  id: ID!
+  name: String!
+  email: String!
+}
